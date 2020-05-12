@@ -7,6 +7,7 @@
     --color-orange: #e67e22;
     --color-darker-orange: #cf6d17;
     --color-checkbox-green: #29E229;
+    --color-whitesmoke: #f4f4f4;
 }
 
 * {
@@ -104,7 +105,7 @@ a:hover {
     border: 2px solid var(--color-orange);
     border-radius: 200px;
     padding: 10px 20px;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
 }
 
 .btn-solid:link,
@@ -188,6 +189,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+header .btn-outline {
+    margin-left: 15px;
 }
 
 /*--------------------------------------*/
@@ -377,4 +382,62 @@ blockquote img {
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+/*--------------------------------------*/
+/*PLANS SECTION*/
+/*--------------------------------------*/
+.section-plans {
+    background-color: var(--color-whitesmoke);
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #e8e8e8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border-bottom: none;
+    padding: 25px 0;
+}
+
+.plan-name {
+    margin-bottom: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    color: var(--color-orange);
+}
+
+.plan-price span {
+    font-size: 40%;
+}
+
+.plan-price-memo {
+    font-size: 80%;
+}
+
+.plan-box div ul {
+    list-style: none;
+}
+
+.plan-box li {
+    padding: 7px 7px;
+
 }
