@@ -86,7 +86,8 @@ p {
 }
 
 section {
-    padding-top: 80px;
+    padding: 80px 0;
+    /*max-height: 100vh;*/
 }
 
 /*LINKS*/
@@ -211,6 +212,10 @@ header {
 /*--------------------------------------*/
 /*MEALS SECTION*/
 /*--------------------------------------*/
+.section-meals {
+    padding: 0;
+}
+
 .meals-showcase {
     list-style: none;
     width: 100%;
@@ -303,4 +308,30 @@ header {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*--------------------------------------*/
+/*STEPS SECTION*/
+/*--------------------------------------*/
+
+.city-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.city-feature {
+    margin-bottom: 10px;
+}
+
+.city-feature ion-icon {
+    color: var(--color-orange);
+}
+
+.city-feature a:link,
+.city-feature a:visited {
+    padding-bottom: 1px;
+    color: var(--color-orange);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-orange);
 }
