@@ -18,7 +18,7 @@
 html,
 body {
     background-color: #fff;
-    color: #333;
+    color: #444;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -52,6 +52,38 @@ h1 {
     text-transform: uppercase;
     color: #fff;
 
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2:after {
+    display: block;
+    content: '';
+    background-color: var(--color-orange);
+    height: 2px;
+    width: 100px;
+    margin: 40px auto 0;
+}
+
+h3 {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 145%;
+}
+
+section {
+    margin-top: 80px;
 }
 
 /*LINKS*/
@@ -152,4 +184,23 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*--------------------------------------*/
+/*FEATURES SECTION*/
+/*--------------------------------------*/
+.wide-paragraph {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+.feature-box p {
+    font-size: 95%;
+}
+
+.feature-icons {
+    font-size: 3.5rem;
+    color: var(--color-orange);
+
 }
