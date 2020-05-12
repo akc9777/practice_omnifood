@@ -38,6 +38,7 @@
         <a href="#" class="btn btn-outline">Show me more</a>
     </div>
 </header>
+
 <section class="section-features" id="section-features">
     <h2>Get fast food &mdash; not fast food</h2>
     <p class="wide-paragraph">Hello, we are Omnifood, your new food delivery service.
@@ -229,7 +230,7 @@
                 leaves me with no time for cooking, so Omnifood is a life
                 -saver. Now that I got used to it, I couldn't live without
                 my daily meals!
-                <cite><img src="res/images/customer-1.jpg">Alberto Duncan</cite>
+                <cite><img src="res/images/customer-1.jpg" alt="">Alberto Duncan</cite>
             </blockquote>
         </div>
 
@@ -238,7 +239,7 @@
                 Inexpensive, healthy and great-tasting meals, delivered right to my home.
                 We have lots of food delivery here in Lisbon, but
                 no one comes even close to Omnifood. Me and my family are so in love!
-                <cite><img src="res/images/customer-2.jpg">Joana Silva</cite>
+                <cite><img src="res/images/customer-2.jpg" alt="">Joana Silva</cite>
             </blockquote>
         </div>
 
@@ -247,7 +248,7 @@
                 I was looking for a quick and easy food delivery service in San Franciso.
                 I tried a lot of them and ended up with Omnifood. Best
                 food delivery service in the Bay Area. Keep up the great work!
-                <cite><img src="res/images/customer-3.jpg">Milton Chapman</cite>
+                <cite><img src="res/images/customer-3.jpg" alt="">Milton Chapman</cite>
             </blockquote>
         </div>
 
@@ -355,6 +356,69 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="section-form" id="section-form">
+    <div class="row">
+        <h2>We're happy to hear from you</h2>
+    </div>
+    <div class="row">
+        <form action="#" id="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3"><label for="input-name">Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="text" id="input-name" name="input-name" placeholder="Your name" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3"><label for="input-email">Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="email" id="input-email" name="input-email" placeholder="Your email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="input-traffic-source">How did you find about us?</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <select id="input-traffic-source" name="input-traffic-source">
+                        <option selected disabled>Select an option</option>
+                        <option value="friends">Friends</option>
+                        <option value="searchengine">Search Engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                        <option value="opt-out">Prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3"><label for="input-newsletter">Newsletter?</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <label><input type="checkbox" name="input-newsletter" id="input-newsletter"
+                                  value="true"> Yes, please!</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="input-message">Drop us a line</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <textarea name="input-message" id="input-message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="submit" value="Send it!">
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 <!--IONICONS SCRIPT-->

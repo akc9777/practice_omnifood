@@ -99,23 +99,26 @@ a:hover {
 
 /*BUTTONS*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     text-decoration: none;
     font-weight: 300;
     border: 2px solid var(--color-orange);
     border-radius: 200px;
     padding: 10px 20px;
-    /*margin-left: 15px;*/
 }
 
 .btn-solid:link,
-.btn-solid:visited {
+.btn-solid:visited,
+input[type=submit] {
     background-color: var(--color-orange);
     color: #fff;
 }
 
 .btn-solid:active,
-.btn-solid:hover {
+.btn-solid:hover,
+input[type=submit]:hover,
+input[type=submit]:focus {
     background-color: var(--color-darker-orange);
     border: 2px solid var(--color-darker-orange);
 
@@ -441,3 +444,30 @@ blockquote img {
     padding: 7px 7px;
 
 }
+
+/*--------------------------------------*/
+/*PLANS SECTION*/
+/*--------------------------------------*/
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
