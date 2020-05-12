@@ -8,6 +8,7 @@
     --color-darker-orange: #cf6d17;
     --color-checkbox-green: #29E229;
     --color-whitesmoke: #f4f4f4;
+    --color-footer-accent: #888;
 }
 
 * {
@@ -86,9 +87,12 @@ p {
     line-height: 145%;
 }
 
+ul {
+    list-style: none;
+}
+
 section {
     padding: 80px 0;
-    /*max-height: 100vh;*/
 }
 
 /*LINKS*/
@@ -101,6 +105,7 @@ a:hover {
 .btn:link,
 .btn:visited,
 input[type=submit] {
+    display: inline-block;
     text-decoration: none;
     font-weight: 300;
     border: 2px solid var(--color-orange);
@@ -469,5 +474,41 @@ input[type=checkbox] {
 
 *:focus {
     outline: none;
+}
+
+/*--------------------------------------*/
+/*FOOTER SECTION*/
+/*--------------------------------------*/
+
+footer {
+    background-color: #333;
+    color: var(--color-footer-accent);
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: var(--color-footer-accent);
+    transition: color .2s;
+}
+
+footer a:active,
+footer a:hover {
+    color: #fff;
+}
+
+.footer-nav li {
+    float: left;
+    margin-left: 18px;
+    padding: 5px 2px;
+}
+
+.social-links li {
+    float: right;
+    margin-right: 10px;
+    font-size: 125%;
+}
+footer p{
+    text-align: center;
 }
 
