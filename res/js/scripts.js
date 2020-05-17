@@ -57,4 +57,18 @@ $(document).ready(function () {
     $('.js--wp-4').waypoint(function (direction) {
         $('.js--wp-4').addClass('animated pulse');
     }, {offset: '35%'});
+
+//    Mobile Navigation
+    $('.js--nav-icon').click(function () {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon ion-icon');
+
+        nav.slideToggle(200);
+        if (icon.attr('name') === 'reorder-three') {
+            icon.attr('name', 'close');
+        } else {
+            icon.attr('name', 'reorder-three');
+        }
+
+    });
 });

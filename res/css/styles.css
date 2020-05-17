@@ -149,6 +149,7 @@ input[type=submit]:focus {
 .logo {
     height: 100px;
     width: auto;
+    float: left;
     margin-top: 20px;
 }
 
@@ -183,6 +184,19 @@ nav li a:hover {
     border-bottom: 2px solid var(--color-orange);
 }
 
+/*MOBILE NAVIGATION*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
 /*STICKY NAVIGATION*/
 
 .sticky .logo-black {
@@ -206,6 +220,7 @@ nav li a:hover {
     box-shadow: 0 5px 10px #636363;
     z-index: 9999;
 }
+
 
 .sticky .main-nav {
     list-style: none;
